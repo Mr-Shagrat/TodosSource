@@ -27,8 +27,12 @@ export default {
 
 .wrapper {
   position: relative;
-  max-width: 420px;
+  width: 420px;
   height: 540px;
+  @media (max-width: 450px) {
+    max-width: 420px;
+    min-width: 397px;
+  }
 }
 .rectangle-1,
 .rectangle-2 {

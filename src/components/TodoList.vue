@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       todos: [],
-      limit: 40,
+      limit: 4,
     };
   },
   methods: {
@@ -33,7 +33,6 @@ export default {
           }
         );
         this.todos = response.data;
-        console.log(this.todos);
       } catch (e) {
         alert("error", e);
       } finally {
