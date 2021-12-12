@@ -23,7 +23,6 @@ export default {
   methods: {
     async fetchPost() {
       try {
-        this.isLoading = true;
         const response = await axios.get(
           "https://jsonplaceholder.typicode.com/todos",
           {
@@ -35,8 +34,6 @@ export default {
         this.todos = response.data;
       } catch (e) {
         alert("error", e);
-      } finally {
-        this.isLoading = false;
       }
     },
     todoClick(item) {

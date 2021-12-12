@@ -3,24 +3,28 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "MyButton",
+};
 </script>
 
 <style lang="scss" scoped>
 .btn {
   cursor: pointer;
+  height: 27px;
+  width: 54px;
   padding: 5px 10px;
   background: #ff8469;
   border-radius: 7px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 14px;
   text-transform: uppercase;
   border: none;
   transition: all 0.2s ease-in;
   &:hover {
-    background-color: #fd441b;
+    background-color: #d95133;
     transition: all 0.3s ease-in;
   }
   &:active {

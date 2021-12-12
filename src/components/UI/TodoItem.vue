@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: "MyItem",
   props: {
     todo: {
       required: true,

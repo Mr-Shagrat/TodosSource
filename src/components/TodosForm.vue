@@ -32,11 +32,13 @@ export default {
   border-radius: 20px;
   &__header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
   }
   &__title {
+    cursor: default;
     font-weight: bold;
     font-size: 28px;
     line-height: 34px;
